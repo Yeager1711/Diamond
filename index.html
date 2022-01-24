@@ -9,6 +9,9 @@
     <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     
+   <!-- AOS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
    <!-- swiper -->
    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
@@ -18,7 +21,6 @@
 
 </head>
 <body>
-    
     <!-- header section starts -->
     <header class="header">
 
@@ -29,15 +31,12 @@
             </div>
     
             <a href="#" class="logo">
-                <i class="far fa-gem"></i> 
 
                 <div class="title">
 
-                    <div class="title-up">
-                        Royal Gold
-                    </div>
+                    <div class="title-up">Royal  <i class="far fa-gem"></i> </div>
                     <div class="title-down">
-                        Diamond
+                        Gold & Diamond
                     </div>
                 </div>
             </a>
@@ -51,7 +50,7 @@
             </div>
         </div>
 
-        <nav class="navbar">
+        <nav class="navbar" data-aos="fade-up" data-aos-delay="150">
             <a href="#home" class="nav-item active">Trang chủ</a>
             <a href="#necklace" class="nav-item">Mặt Dây chuyền</a>
             <a href="#earring" class="nav-item">Bông tai</a>
@@ -72,15 +71,15 @@
 
                 <div class="swiper-slide slide" style="background: url(img/home1_slide1.jpg) no-repeat;">
                     <div class="content">
-                    <h3>Thỏa sức lựa chọn trang sức yêu thích từ câu chuyện của bạn</h3>
-                    <a href="#" class="btn">Mua ngay</a>
+                    <h3 data-aos="fade-up" data-aos-delay="200">Thỏa sức lựa chọn trang sức yêu thích từ câu chuyện của bạn</h3>
+                    <a href="#" class="btn" data-aos="fade-up" data-aos-delay="400">Mua ngay</a>
                     </div>
                 </div>
 
                 <div class="swiper-slide slide" style="background: url(img/home1_slide2.jpg) no-repeat;">
                     <div class="content">
-                    <h3>Chất lượng tuyệt hảo</h3>
-                    <a href="#" class="btn">mua ngay</a>
+                    <h3 data-aos="fade-up" data-aos-delay="200">Chất lượng tuyệt hảo</h3>
+                    <a href="#" class="btn" data-aos="fade-up" data-aos-delay="400">mua ngay</a>
                     </div>
                 </div>
 
@@ -161,7 +160,7 @@
 
             <div class="box-container">
 
-                <div class="box">
+                <div class="box"  data-aos="fade-right" data-aos-delay="200">
                     <img src="img/datchuan.png" alt="">
                     <div class="content">
                         <h3>Đat chuẩn</h3>
@@ -169,7 +168,7 @@
                     </div>
                 </div>
 
-                <div class="box">
+                <div class="box" data-aos="fade-right" data-aos-delay="400">
                     <img src="img/chatluong.png" alt="">
                     <div class="content">
                         <h3>Chất lượng</h3>
@@ -177,7 +176,7 @@
                     </div>
                 </div>
 
-                <div class="box">
+                <div class="box" data-aos="fade-right" data-aos-delay="600">
                     <img src="img/camket.png" alt="">
                     <div class="content">
                         <h3>Cam kết</h3>
@@ -185,7 +184,7 @@
                     </div>
                 </div>
 
-                <div class="box">
+                <div class="box" data-aos="fade-right" data-aos-delay="650">
                     <img src="img/mienphi.png" alt="">
                     <div class="content">
                         <h3>Miễn Phí</h3>
@@ -201,8 +200,8 @@
                 <div class="model-content">
                     <div class="content">
                         <span>Về chúng tôi</span>
-                        <h3>Royal Diamond</h3>
-                        <p>Câu chuyện của Royal Diamond bắt nguồn từ những thấu hiểu, cảm thông sâu sắc rất đời thường. Biết rằng cuộc sống không như mong đợi & đôi lúc yêu thương “trốn tìm”. Chúng tôi tin rằng mỗi món trang sức không dừng lại ở giá trị vật chất mà còn có sức mạnh khơi gợi, tôn vinh, những khoảnh khắc đẹp nhất, quý nhất của bạn & người thân yêu.</p>
+                        <h3 data-aos="fade-right" data-aos-delay="400">Royal Diamond</h3>
+                        <p data-aos="fade-up" data-aos-delay="150">Câu chuyện của Royal Diamond bắt nguồn từ những thấu hiểu, cảm thông sâu sắc rất đời thường. Biết rằng cuộc sống không như mong đợi & đôi lúc yêu thương “trốn tìm”. Chúng tôi tin rằng mỗi món trang sức không dừng lại ở giá trị vật chất mà còn có sức mạnh khơi gợi, tôn vinh, những khoảnh khắc đẹp nhất, quý nhất của bạn & người thân yêu.</p>
                     </div>
                 </div>
             </div>
@@ -224,6 +223,7 @@
                         <h3>Mặt dây chuyền trắng 10k đính đá ECZ</h3>
                         <span class="price">3.981.000đ</span>
                     </div>
+                    <img class="new-text" src="img/new.svg" alt="">
                 </div>
 
                 <div class="swiper-slide slide">
@@ -232,6 +232,7 @@
                         <h3>Mặt dây chuyền trắng 10k đính đá ECZ</h3>
                         <span class="price">3.981.000đ</span>
                     </div>
+                    <img class="new-text" src="img/new.svg" alt="">
                 </div>
 
                 <div class="swiper-slide slide">
@@ -240,6 +241,7 @@
                         <h3>Mặt dây chuyền trắng 10k đính đá ECZ</h3>
                         <span class="price">3.981.000đ</span>
                     </div>
+                    <img class="new-text" src="img/new.svg" alt="">
                 </div>
 
                 <div class="swiper-slide slide">
@@ -248,6 +250,7 @@
                         <h3>Mặt dây chuyền trắng 10k đính đá ECZ</h3>
                         <span class="price">3.981.000đ</span>
                     </div>
+                    <img class="new-text" src="img/new.svg" alt="">
                 </div>
 
                 <div class="swiper-slide slide">
@@ -256,6 +259,7 @@
                         <h3>Mặt dây chuyền trắng 10k đính đá ECZ</h3>
                         <span class="price">3.981.000đ</span>
                     </div>
+                    <img class="new-text" src="img/new.svg" alt="">
                 </div>
 
                 <div class="swiper-slide slide">
@@ -264,6 +268,7 @@
                         <h3>Mặt dây chuyền trắng 10k đính đá ECZ</h3>
                         <span class="price">3.981.000đ</span>
                     </div>
+                    <img class="new-text" src="img/new.svg" alt="">
                 </div>
 
                 <div class="swiper-slide slide">
@@ -272,6 +277,7 @@
                         <h3>Mặt dây chuyền trắng 10k đính đá ECZ</h3>
                         <span class="price">3.981.000đ</span>
                     </div>
+                    <img class="new-text" src="img/new.svg" alt="">
                 </div>
 
                 <div class="swiper-slide slide">
@@ -280,6 +286,7 @@
                         <h3>Mặt dây chuyền trắng 10k đính đá ECZ</h3>
                         <span class="price">3.981.000đ</span>
                     </div>
+                    <img class="new-text" src="img/new.svg" alt="">
                 </div>
 
                 <div class="swiper-slide slide">
@@ -288,6 +295,7 @@
                         <h3>Mặt dây chuyền trắng 10k đính đá ECZ</h3>
                         <span class="price">3.981.000đ</span>
                     </div>
+                    <img class="new-text" src="img/new.svg" alt="">
                 </div>
 
                 <div class="swiper-slide slide">
@@ -296,6 +304,7 @@
                         <h3>Mặt dây chuyền trắng 10k đính đá ECZ</h3>
                         <span class="price">3.981.000đ</span>
                     </div>
+                    <img class="new-text" src="img/new.svg" alt="">
                 </div>
             </div>
 
@@ -318,6 +327,7 @@
                         <h3>Bông tai Vàng đính đá 10k đính đá ECZ</h3>
                         <span class="price">5.821.500đ</span>
                     </div>
+                    <img class="new-text" src="img/new.svg" alt="">
                 </div>
 
                 <div class="swiper-slide slide">
@@ -326,6 +336,7 @@
                         <h3>Bông tai Vàng đính đá 10k đính đá ECZ</h3>
                         <span class="price">5.821.500đ</span>
                     </div>
+                    <img class="new-text" src="img/new.svg" alt="">
                 </div>
 
                 <div class="swiper-slide slide">
@@ -334,6 +345,7 @@
                         <h3>Bông tai Vàng đính đá 10k đính đá ECZ</h3>
                         <span class="price">5.821.500đ</span>
                     </div>
+                    <img class="new-text" src="img/new.svg" alt="">
                 </div>
 
                 <div class="swiper-slide slide">
@@ -342,6 +354,7 @@
                         <h3>Bông tai Vàng đính đá 10k đính đá ECZ</h3>
                         <span class="price">5.821.500đ</span>
                     </div>
+                    <img class="new-text" src="img/new.svg" alt="">
                 </div>
 
                 <div class="swiper-slide slide">
@@ -350,6 +363,7 @@
                         <h3>Bông tai Vàng đính đá 10k đính đá ECZ</h3>
                         <span class="price">5.821.500đ</span>
                     </div>
+                    <img class="new-text" src="img/new.svg" alt="">
                 </div>
 
                 <div class="swiper-slide slide">
@@ -358,6 +372,7 @@
                         <h3>Bông tai Vàng đính đá 10k đính đá ECZ</h3>
                         <span class="price">5.821.500đ</span>
                     </div>
+                    <img class="new-text" src="img/new.svg" alt="">
                 </div>
 
                 <div class="swiper-slide slide">
@@ -366,6 +381,7 @@
                         <h3>Bông tai Vàng đính đá 10k đính đá ECZ</h3>
                         <span class="price">5.821.500đ</span>
                     </div>
+                    <img class="new-text" src="img/new.svg" alt="">
                 </div>
 
                 <div class="swiper-slide slide">
@@ -374,6 +390,7 @@
                         <h3>Bông tai Vàng đính đá 10k đính đá ECZ</h3>
                         <span class="price">5.821.500đ</span>
                     </div>
+                    <img class="new-text" src="img/new.svg" alt="">
                 </div>
 
                 <div class="swiper-slide slide">
@@ -382,6 +399,7 @@
                         <h3>Bông tai Vàng đính đá 10k đính đá ECZ</h3>
                         <span class="price">5.821.500đ</span>
                     </div>
+                    <img class="new-text" src="img/new.svg" alt="">
                 </div>
 
                 <div class="swiper-slide slide">
@@ -390,6 +408,7 @@
                         <h3>Bông tai Vàng đính đá 10k đính đá ECZ</h3>
                         <span class="price">5.821.500đ</span>
                     </div>
+                    <img class="new-text" src="img/new.svg" alt="">
                 </div>
             </div>
 
@@ -397,6 +416,213 @@
         </div>
     </section>
     <!-- section earring end -->
+
+    <!-- section Bangles starts -->
+    <section class="bangles" id="Bangles">
+        <h1 class="heading">Lắc tay</h1>
+
+        <div class="swiper bangles-slider">
+
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide">
+                    <img src="img/L_11.png" alt="">
+                    <div class="content">
+                        <h3>Lắc tay Vàng trắng 10k đính đá ECZ - Giọt Sương Mai</h3>
+                        <span class="price">10.580.000đ</span>
+                    </div>
+                    <img class="new-text" src="img/new.svg" alt="">
+                </div>
+
+                <div class="swiper-slide slide">
+                    <img src="img/L_2.png" alt="">
+                    <div class="content">
+                        <h3>Lắc tay Vàng trắng 10k đính đá ECZ - Giọt Sương Mai</h3>
+                        <span class="price">10.580.000đ</span>
+                    </div>
+                    <img class="new-text" src="img/new.svg" alt="">
+                </div>
+
+                <div class="swiper-slide slide">
+                    <img src="img/L_3.png" alt="">
+                    <div class="content">
+                        <h3>Lắc tay Vàng trắng 10k đính đá ECZ - Giọt Sương Mai</h3>
+                        <span class="price">10.580.000đ</span>
+                    </div>
+                    <img class="new-text" src="img/new.svg" alt="">
+                </div>
+
+                <div class="swiper-slide slide">
+                    <img src="img/L4.png" alt="">
+                    <div class="content">
+                        <h3>Lắc tay Vàng trắng 10k đính đá ECZ - Giọt Sương Mai</h3>
+                        <span class="price">10.580.000đ</span>
+                    </div>
+                    <img class="new-text" src="img/new.svg" alt="">
+                </div>
+
+                <div class="swiper-slide slide">
+                    <img src="img/L_5.png" alt="">
+                    <div class="content">
+                        <h3>Lắc tay Vàng trắng 10k đính đá ECZ - Giọt Sương Mai</h3>
+                        <span class="price">10.580.000đ</span>
+                    </div>
+                    <img class="new-text" src="img/new.svg" alt="">
+                </div>
+
+                <div class="swiper-slide slide">
+                    <img src="img/L_1.png" alt="">
+                    <div class="content">
+                        <h3>Lắc tay Vàng trắng 10k đính đá ECZ - Giọt Sương Mai</h3>
+                        <span class="price">10.580.000đ</span>
+                    </div>
+                    <img class="new-text" src="img/new.svg" alt="">
+                </div>
+
+                <div class="swiper-slide slide">
+                    <img src="img/L_7.png" alt="">
+                    <div class="content">
+                        <h3>Lắc tay Vàng trắng 10k đính đá ECZ - Giọt Sương Mai</h3>
+                        <span class="price">10.580.000đ</span>
+                    </div>
+                    <img class="new-text" src="img/new.svg" alt="">
+                </div>
+
+                <div class="swiper-slide slide">
+                    <img src="img/L_8.png" alt="">
+                    <div class="content">
+                        <h3>Lắc tay Vàng trắng 10k đính đá ECZ - Giọt Sương Mai</h3>
+                        <span class="price">10.580.000đ</span>
+                    </div>
+                    <img class="new-text" src="img/new.svg" alt="">
+                </div>
+
+                <div class="swiper-slide slide">
+                    <img src="img/L_9.png" alt="">
+                    <div class="content">
+                        <h3>Lắc tay Vàng trắng 10k đính đá ECZ - Giọt Sương Mai</h3>
+                        <span class="price">10.580.000đ</span>
+                    </div>
+                    <img class="new-text" src="img/new.svg" alt="">
+                </div>
+
+                <div class="swiper-slide slide">
+                    <img src="img/L_10.png" alt="">
+                    <div class="content">
+                        <h3>Lắc tay Vàng trắng 10k đính đá ECZ - Giọt Sương Mai</h3>
+                        <span class="price">10.580.000đ</span>
+                    </div>
+                    <img class="new-text" src="img/new.svg" alt="">
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!-- section Bangles end -->
+
+    <!-- section Bangles starts -->
+    <section class="silring" id="silring">
+        <h1 class="heading">Nhẫn Bạc</h1>
+
+        <div class="swiper silring-slider">
+
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide">
+                    <img src="img/Nhan_11.png" alt="">
+                    <div class="content">
+                        <h3>Nhẫn Vàng trắng 10k đính đá ECZ</h3>
+                        <span class="price">5.767.000đ</span>
+                    </div>
+
+                    <img class="new-text" src="img/new.svg" alt="">
+                </div>
+
+                <div class="swiper-slide slide">
+                    <img src="img/Nhan_2.png" alt="">
+                    <div class="content">
+                        <h3>Nhẫn Vàng trắng 10k đính đá ECZ</h3>
+                        <span class="price">5.767.000đ</span>
+                    </div>
+                    <img class="new-text" src="img/new.svg" alt="">
+                </div>
+
+                <div class="swiper-slide slide">
+                    <img src="img/Nhan_3.png" alt="">
+                    <div class="content">
+                        <h3>Nhẫn Vàng trắng 10k đính đá ECZ</h3>
+                        <span class="price">5.767.000đ</span>
+                    </div>
+                    <img class="new-text" src="img/new.svg" alt="">
+                </div>
+
+                <div class="swiper-slide slide">
+                    <img src="img/Nhan_4.png" alt="">
+                    <div class="content">
+                        <h3>Nhẫn Vàng trắng 10k đính đá ECZ</h3>
+                        <span class="price">5.767.000đ</span>
+                    </div>
+                    <img class="new-text" src="img/new.svg" alt="">
+                </div>
+
+                <div class="swiper-slide slide">
+                    <img src="img/Nhan_5.png" alt="">
+                    <div class="content">
+                        <h3>Nhẫn Vàng trắng 10k đính đá ECZ</h3>
+                        <span class="price">5.767.000đ</span>
+                    </div>
+                    <img class="new-text" src="img/new.svg" alt="">
+                </div>
+
+                <div class="swiper-slide slide">
+                    <img src="img/Nhan_6.png" alt="">
+                    <div class="content">
+                        <h3>Nhẫn Vàng trắng 10k đính đá ECZ</h3>
+                        <span class="price">5.767.000đ</span>
+                    </div>
+                    <img class="new-text" src="img/new.svg" alt="">
+                </div>
+
+                <div class="swiper-slide slide">
+                    <img src="img/Nhan_7.png" alt="">
+                    <div class="content">
+                        <h3>Nhẫn Vàng trắng 10k đính đá ECZ</h3>
+                        <span class="price">5.767.000đ</span>
+                    </div>
+                    <img class="new-text" src="img/new.svg" alt="">
+                </div>
+
+                <div class="swiper-slide slide">
+                    <img src="img/Nhan_8.png" alt="">
+                    <div class="content">
+                        <h3>Nhẫn Vàng trắng 10k đính đá ECZ</h3>
+                        <span class="price">5.767.000đ</span>
+                    </div>
+                    <img class="new-text" src="img/new.svg" alt="">
+                </div>
+
+                <div class="swiper-slide slide">
+                    <img src="img/Nhan_9.png" alt="">
+                    <div class="content">
+                        <h3>Nhẫn Vàng trắng 10k đính đá ECZ</h3>
+                        <span class="price">5.767.000đ</span>
+                    </div>
+                    <img class="new-text" src="img/new.svg" alt="">
+                </div>
+
+                <div class="swiper-slide slide">
+                    <img src="img/Nhan_10.png" alt="">
+                    <div class="content">
+                        <h3>Nhẫn Vàng trắng 10k đính đá ECZ</h3>
+                        <span class="price">5.767.000đ</span>
+                    </div>
+                    <img class="new-text" src="img/new.svg" alt="">
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!-- section Bangles end -->
 
 
 
@@ -406,9 +632,11 @@
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
     <!-- custom js file link  -->
     <script src="js/script.js"></script>
-    <script src="js/swiper.js"></script>
+    <script src="js/swiper-aos.js"></script>
     <script src="js/window.js"></script>
 </body>
 </html>

@@ -1,3 +1,8 @@
+AOS.init({
+  duration: 350,
+  offset:100,
+});
+
 var swiper = new Swiper(".home-slider", {
     grabCursor:true,
     loop:true,
@@ -76,3 +81,52 @@ var swiper = new Swiper(".trendding-slider", {
        },
     },
   });
+
+
+   //  bangles-trendding
+ var swiper = new Swiper(".bangles-slider", {
+  grabCursor:true,
+  loop:true,
+  centeredSlides:true,
+  spaceBetween: 20,
+  pagination: {
+     el: ".swiper-pagination",
+     clickable: true,
+  },
+  breakpoints: {
+     0: {
+       slidesPerView: 1,
+     },
+     700: {
+       slidesPerView: 3,
+     },
+     1000: {
+       slidesPerView: 5,
+     },
+  },
+});
+
+   //  silring-trendding
+   var swiper = new Swiper(".silring-slider", {
+    grabCursor:true,
+    loop:true,
+    centeredSlides:true,
+    spaceBetween: 20,
+    pagination: {
+       el: ".swiper-pagination",
+       clickable: true,
+    },
+    breakpoints: {
+       0: {
+         slidesPerView: 1,
+       },
+       700: {
+         slidesPerView: 3,
+       },
+       1000: {
+         slidesPerView: 5,
+       },
+    },
+  });
+  
+
