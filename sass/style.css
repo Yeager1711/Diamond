@@ -64,6 +64,35 @@ section {
   z-index: 99;
 }
 
+.header.active {
+  background: #fff;
+}
+
+.header.active .header-wrap .contacts #bars-btn {
+  color: #333;
+}
+
+.header.active .header-wrap .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header.active .header-wrap .logo .title .title-up {
+  color: #333;
+}
+
+.header.active .header-wrap .logo .title .title-down {
+  color: #333;
+}
+
+.header.active .header-wrap #search-btn {
+  color: #333;
+}
+
 .header .header-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -76,16 +105,22 @@ section {
           justify-content: space-between;
 }
 
-.header .header-wrap .contacts .gmail,
-.header .header-wrap .contacts .phone {
+.header .header-wrap .contacts .gmail {
   color: #e1e1e1;
   text-transform: none;
   font-size: 1.5rem;
   font-weight: bolder;
 }
 
-.header .header-wrap .contacts .phone {
-  margin-left: 1rem;
+.header .header-wrap .contacts .gmail:hover {
+  color: #fff;
+}
+
+.header .header-wrap .contacts #bars-btn {
+  display: none;
+  padding: 1rem;
+  font-size: 2.5rem;
+  color: #fff;
 }
 
 .header .header-wrap .logo {
@@ -133,6 +168,7 @@ section {
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
   border-radius: .3rem;
+  z-index: 10 !important;
   visibility: hidden;
   opacity: 0;
 }
@@ -143,6 +179,7 @@ section {
 }
 
 .header .search-form i {
+  display: none;
   font-size: 1.7rem;
   float: right;
 }
@@ -159,18 +196,6 @@ section {
   background: #fff;
   border: #e9eaec;
   border-radius: 5rem;
-}
-
-.header .search-form .box-search::before {
-  content: "";
-  position: absolute;
-  bottom: 4rem;
-  right: 5.5rem;
-  height: 3rem;
-  width: 2.8rem;
-  background: #fff;
-  -webkit-transform: rotate(48deg);
-          transform: rotate(48deg);
 }
 
 .header .search-form .box-search input {
@@ -218,8 +243,16 @@ section {
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
 }
 
-.sticky .header-wrap .contacts .gmail,
-.sticky .header-wrap .contacts .phone {
+.sticky .header-wrap .contacts .gmail {
+  color: #333;
+}
+
+.sticky .header-wrap .contacts .gmail:hover {
+  color: #333;
+}
+
+.sticky .header-wrap .contacts #bars-btn {
+  font-size: 2rem;
   color: #333;
 }
 
@@ -252,6 +285,11 @@ section {
   background: #222;
 }
 
+.home .slide-top {
+  background-size: cover;
+  background-position: top;
+}
+
 .home .slide {
   min-height: 100vh;
   background-size: cover !important;
@@ -264,19 +302,26 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
 }
 
 .home .slide .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
   text-align: center;
-  width: 70rem;
+  width: 80rem;
 }
 
 .home .slide .content h3 {
-  font-size: 3.5vw;
+  font-size: 3rem;
+  line-height: 2;
   text-transform: uppercase;
+  font-family: serif;
   color: #e1e1e1;
   text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
   line-height: 1;
@@ -334,6 +379,8 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -439,6 +486,7 @@ section {
           align-items: center;
   margin: 4rem 0 5rem;
   border-radius: .5rem;
+  border: .1rem solid #bbb;
   overflow: hidden;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
@@ -508,5 +556,124 @@ section {
   padding: 0;
   width: 100%;
   margin-bottom: 2rem;
+}
+
+.client .slide .text {
+  padding: 2rem;
+  font-size: 1.5rem;
+  font-style: italic;
+  background: #eee;
+  border-radius: 1rem;
+  color: #10221b;
+  line-height: 2;
+  position: relative;
+  z-index: 0;
+  margin-bottom: 3rem;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.client .slide .text::before {
+  content: '';
+  position: absolute;
+  bottom: -1.4rem;
+  left: 1.2rem;
+  height: 4rem;
+  width: 3rem;
+  background: #eee;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.client .slide .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+.client .slide .user img {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+}
+
+.client .slide .user .info h3 {
+  font-size: 2rem;
+  color: #10221b;
+}
+
+.client .slide .user .info span {
+  color: #219150;
+  font-size: 1.5rem;
+}
+
+/* media queries  */
+@media (max-width: 1200px) {
+  section {
+    padding: 3rem 5%;
+  }
+}
+
+@media (max-width: 991px) {
+  section {
+    padding: 3rem 2rem;
+  }
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 867px) {
+  .header .fa-times {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  .header .header-wrap .contacts .gmail {
+    display: none;
+  }
+  .header .header-wrap .contacts #bars-btn {
+    display: inline-block;
+  }
+  .header .header-wrap .contacts #bars-btn:hover {
+    cursor: pointer;
+  }
+  .header .navbar {
+    display: block;
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  .header .navbar.active {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .header .navbar .nav-item {
+    color: #333;
+    display: block;
+    margin: 2rem;
+    padding: 1.3rem 1rem;
+    max-width: 100%;
+    font-weight: bolder;
+  }
+  .header .navbar .nav-item:hover {
+    background: #e1e1e1;
+    border-bottom: .2rem solid #333;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

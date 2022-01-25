@@ -3,15 +3,23 @@ AOS.init({
   offset:100,
 });
 
+// home
 var swiper = new Swiper(".home-slider", {
-    grabCursor:true,
-    loop:true,
-    centeredSlides:true,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
- });
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 
  //  slide-trendding
 var swiper = new Swiper(".trendding-slider", {
@@ -48,7 +56,7 @@ var swiper = new Swiper(".trendding-slider", {
   },
   breakpoints: {
      0: {
-       slidesPerView: 1,
+       slidesPerView: 2,
      },
      700: {
        slidesPerView: 3,
@@ -71,7 +79,7 @@ var swiper = new Swiper(".trendding-slider", {
     },
     breakpoints: {
        0: {
-         slidesPerView: 1,
+         slidesPerView: 2,
        },
        700: {
          slidesPerView: 3,
@@ -95,7 +103,7 @@ var swiper = new Swiper(".trendding-slider", {
   },
   breakpoints: {
      0: {
-       slidesPerView: 1,
+       slidesPerView: 2,
      },
      700: {
        slidesPerView: 3,
@@ -118,7 +126,7 @@ var swiper = new Swiper(".trendding-slider", {
     },
     breakpoints: {
        0: {
-         slidesPerView: 1,
+         slidesPerView: 2,
        },
        700: {
          slidesPerView: 3,
@@ -129,4 +137,25 @@ var swiper = new Swiper(".trendding-slider", {
     },
   });
   
-
+  // client-slider
+  var swiper = new Swiper(".client-slider", {
+    grabCursor:true,
+    loop:true,
+    centeredSlides:true,
+    spaceBetween: 20,
+    pagination: {
+       el: ".swiper-pagination",
+       clickable: true,
+    },
+    breakpoints: {
+       0: {
+         slidesPerView: 1,
+       },
+       700: {
+         slidesPerView: 3,
+       },
+       1000: {
+         slidesPerView: 5,
+       },
+    },
+  });
