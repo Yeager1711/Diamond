@@ -142,7 +142,7 @@ var swiper = new Swiper(".trendding-slider", {
     grabCursor:true,
     loop:true,
     centeredSlides:true,
-    spaceBetween: 10,
+    spaceBetween: 30,
     pagination: {
        el: ".swiper-pagination",
        clickable: true,
