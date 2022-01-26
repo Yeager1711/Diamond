@@ -385,7 +385,7 @@ section{
         align-items: center;
 
         .box-container{
-            flex: 1 1 42rem;
+            flex: 1 1 45rem;
 
             .box{
                 display: flex;
@@ -405,17 +405,17 @@ section{
                         font-size: 1.8rem;
                         color: #fff;
                         text-transform: none;
-                        padding-top: 1rem;
                     }
                 }
             }
         }
 
         .images{
-            flex: 1 1 42rem;
+            flex: 1 1 40rem;
+            background-position: center;
+            background-size: contain;
             position: relative;
             display: flex;
-            align-items: center;
 
             img{
                 width: 100%;
@@ -427,15 +427,14 @@ section{
                     top: 1rem;
                     left: 1rem;
                     right: 1rem;
-                    bottom: 1rem;
-                    margin: auto    ;
+                    bottom: 1rem;    ;
                     background: rgba(0,0,0,.7);
     
                 .content{
-                    padding: 5rem;
-                    width: 50rem;
+                    padding: 2rem;
+                    width: 100%;
                     height: 15rem;
-                    
+                    margin: auto
     
                     span{
                         font-size: 2.5rem;
@@ -449,11 +448,11 @@ section{
     
                     p{
                         text-transform: none;
-                        font-size: 1.5rem;
+                        font-size: 1.7rem;
                         font-weight: bolder;
                         line-height: 2;
                         color: #fff;
-                        padding-top: 2rem;
+                        padding-top: 1rem;
                     }
                 }
             }
@@ -663,24 +662,6 @@ section{
             }
         }
     }
-
-    // .trendding{
-
-    //     .slide{
-    //         text-align: center;
-    //         padding: 4rem 2rem;
-    //         border-radius: .5rem;;
-    //         margin-bottom: 3rem;
-    
-    //         h3{
-    //             text-transform: none;
-    //             font-size: 1.8rem;
-    //             font-weight: 400;
-    //             padding: 1.5rem 0;
-    //             color: #333;
-    //         }
-    //     }
-    // }
 }
 
 @media (max-width:768px){
@@ -693,6 +674,80 @@ section{
 @media (max-width:600px){
 
 
+}
+
+@media (max-width:540px){
+    .standard{
+    
+        .row{
+    
+            .box-container{
+    
+                .box{
+                    margin: 1rem 0 1.5rem;
+    
+                    .content{
+                        padding-left: 1rem;
+    
+                        h3{
+                            font-size: 2.5rem;
+                            text-transform: none;
+                            color: #fff;
+                        }
+    
+                        p{
+                            font-size: 1.8rem;
+                            color: #fff;
+                            text-transform: none;
+                        }
+                    }
+                }
+            }
+    
+            .images{
+    
+                img{
+                    width: 100%;
+                    border: 1rem solid #fff;
+                }
+    
+                .model-content{
+                    position: absolute;
+                        top: 1rem;
+                        left: 1rem;
+                        right: 1rem;
+                        bottom: 1rem;  ;
+                        background: rgba(0,0,0,.7);
+        
+                        .content{
+                            padding: 2rem;
+                            max-width: 100%;
+                            height: 15rem;
+                            
+            
+                            span{
+                                padding: 0;
+                                font-size: 1.5rem;
+                                color: #fff;
+                            }
+            
+                            h3{
+                                font-size: 2.5rem;
+                                color: #fff;
+                            }
+            
+                            p{
+                                text-transform: none;
+                                font-size: 1.5rem;
+                                // font-weight: bolder;
+                                line-height: 2;
+                                color: #fff;
+                            }
+                        }
+                }
+            }
+        }
+    }
 }
  
  @media (max-width:450px){
