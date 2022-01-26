@@ -49,14 +49,14 @@ var swiper = new Swiper(".trendding-slider", {
   grabCursor:true,
   loop:true,
   centeredSlides:true,
-  spaceBetween: 20,
+  spaceBetween: 10,
   pagination: {
      el: ".swiper-pagination",
      clickable: true,
   },
   breakpoints: {
      0: {
-       slidesPerView: 2,
+       slidesPerView: 3,
      },
      700: {
        slidesPerView: 3,
@@ -72,14 +72,14 @@ var swiper = new Swiper(".trendding-slider", {
     grabCursor:true,
     loop:true,
     centeredSlides:true,
-    spaceBetween: 20,
+    spaceBetween: 10,
     pagination: {
        el: ".swiper-pagination",
        clickable: true,
     },
     breakpoints: {
        0: {
-         slidesPerView: 2,
+         slidesPerView: 3,
        },
        700: {
          slidesPerView: 3,
@@ -96,14 +96,14 @@ var swiper = new Swiper(".trendding-slider", {
   grabCursor:true,
   loop:true,
   centeredSlides:true,
-  spaceBetween: 20,
+  spaceBetween: 10,
   pagination: {
      el: ".swiper-pagination",
      clickable: true,
   },
   breakpoints: {
      0: {
-       slidesPerView: 2,
+       slidesPerView: 3,
      },
      700: {
        slidesPerView: 3,
@@ -119,14 +119,14 @@ var swiper = new Swiper(".trendding-slider", {
     grabCursor:true,
     loop:true,
     centeredSlides:true,
-    spaceBetween: 20,
+    spaceBetween: 10,
     pagination: {
        el: ".swiper-pagination",
        clickable: true,
     },
     breakpoints: {
        0: {
-         slidesPerView: 2,
+         slidesPerView: 3,
        },
        700: {
          slidesPerView: 3,
@@ -142,14 +142,14 @@ var swiper = new Swiper(".trendding-slider", {
     grabCursor:true,
     loop:true,
     centeredSlides:true,
-    spaceBetween: 20,
+    spaceBetween: 10,
     pagination: {
        el: ".swiper-pagination",
        clickable: true,
     },
     breakpoints: {
        0: {
-         slidesPerView: 1,
+         slidesPerView: 3,
        },
        700: {
          slidesPerView: 3,
