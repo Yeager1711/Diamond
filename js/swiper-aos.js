@@ -149,7 +149,7 @@ var swiper = new Swiper(".trendding-slider", {
     },
     breakpoints: {
        0: {
-         slidesPerView: 3,
+         slidesPerView: 2,
        },
        700: {
          slidesPerView: 3,
