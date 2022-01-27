@@ -35,7 +35,7 @@ home.onclick = () =>{
 let previewContainer = document.querySelector('.products-preview');
 let previewBox = previewContainer.querySelectorAll('.preview');
 
-document.querySelectorAll('.swiper-wrapper .slide').forEach(box =>{
+document.querySelectorAll('.necklace .slide').forEach(box =>{
   box.onclick = () =>{
     previewContainer.style.display = 'flex';
     let name = box.getAttribute('data-name');

@@ -7,6 +7,7 @@
   border: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  list-style: none;
   outline: none;
   text-decoration: none;
   text-transform: capitalize;
@@ -34,7 +35,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 section {
-  padding: 2rem 7%;
+  padding: 2rem 4%;
 }
 
 .heading {
@@ -80,37 +81,53 @@ section {
   top: 0;
   left: 0;
   right: 0;
-  padding: 2rem 7% 0;
-  z-index: 99;
-}
-
-.header.active {
+  padding: 0 4%;
   background: #fff;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  z-index: 99999;
 }
 
-.header.active .header-wrap .contacts #bars-btn {
-  color: #333;
-}
-
-.header.active .header-wrap .logo {
+.header .header-contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: .1rem solid #e1e1e1;
+  padding: 1.5rem 0;
 }
 
-.header.active .header-wrap .logo .title .title-up {
+.header .header-contact .phone .mobile-phone,
+.header .header-contact .phone .mobile-rotaty,
+.header .header-contact .phone .gmail-contact,
+.header .header-contact .gmail .mobile-phone,
+.header .header-contact .gmail .mobile-rotaty,
+.header .header-contact .gmail .gmail-contact {
+  font-size: 1.4rem;
   color: #333;
 }
 
-.header.active .header-wrap .logo .title .title-down {
-  color: #333;
+.header .header-contact .phone .mobile-phone i,
+.header .header-contact .phone .mobile-rotaty i,
+.header .header-contact .phone .gmail-contact i,
+.header .header-contact .gmail .mobile-phone i,
+.header .header-contact .gmail .mobile-rotaty i,
+.header .header-contact .gmail .gmail-contact i {
+  padding-right: .5rem;
 }
 
-.header.active .header-wrap #search-btn {
-  color: #333;
+.header .header-contact .phone .mobile-phone,
+.header .header-contact .gmail .mobile-phone {
+  margin-right: 1.5rem;
+}
+
+.header .header-contact .gmail .gmail-contact {
+  text-transform: none;
 }
 
 .header .header-wrap {
@@ -125,24 +142,6 @@ section {
           justify-content: space-between;
 }
 
-.header .header-wrap .contacts .gmail {
-  color: #e1e1e1;
-  text-transform: none;
-  font-size: 1.5rem;
-  font-weight: bolder;
-}
-
-.header .header-wrap .contacts .gmail:hover {
-  color: #fff;
-}
-
-.header .header-wrap .contacts #bars-btn {
-  display: none;
-  padding: 1rem;
-  font-size: 2.5rem;
-  color: #fff;
-}
-
 .header .header-wrap .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -152,156 +151,67 @@ section {
           align-items: center;
 }
 
-.header .header-wrap .logo .title .title-up {
+.header .header-wrap .logo img {
+  width: 10rem;
+  height: 10rem;
+}
+
+.header .header-wrap .logo h3 {
   text-transform: uppercase;
-  text-align: center;
-  font-size: 3rem;
-  font-weight: bolder;
-  color: #eeebeb;
+  color: #333;
+  font-size: 1.8rem;
+  font-family: 'Courier New', Courier, monospace;
 }
 
-.header .header-wrap .logo .title .title-up i {
-  font-size: 2.5rem;
+.header .header-wrap .logo span {
+  color: #333;
+  font-size: 1.4rem;
+  text-transform: uppercase;
 }
 
-.header .header-wrap .logo .title .title-down {
-  text-align: center;
-  font-size: 2rem;
-  color: #ccc;
-}
-
-.header .header-wrap #search-btn {
-  color: #fff;
-  cursor: pointer;
-  font-size: 2.5rem;
-  position: relative;
-}
-
-.header .search-form {
-  position: absolute;
-  top: 10rem;
-  right: 3.5rem;
-  width: 28rem;
-  padding: .6rem;
-  text-align: center;
-  background: #fff;
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
-          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
-  border-radius: .3rem;
-  z-index: 10 !important;
-  visibility: hidden;
-  opacity: 0;
-}
-
-.header .search-form.active {
-  visibility: visible;
-  opacity: 1;
-}
-
-.header .search-form i {
-  display: none;
+.header .header-wrap .navbar a {
   font-size: 1.7rem;
-  float: right;
+  color: #333;
+  margin-right: 3rem;
 }
 
-.header .search-form .box-search {
-  position: relative;
-  width: 100%;
+.header .header-wrap .navbar a:hover {
+  border-bottom: .2rem solid #333;
+}
+
+.header .header-wrap .icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: #fff;
-  border: #e9eaec;
-  border-radius: 5rem;
 }
 
-.header .search-form .box-search input {
-  padding-left: 1.5rem;
-  font-size: 1.6rem;
-  width: 100%;
-  color: #111;
-  text-transform: none;
-}
-
-.header .search-form .box-search span {
+.header .header-wrap .icons #search-btn {
   font-size: 2rem;
   color: #333;
-  padding: 1.5rem;
-}
-
-.header .navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   padding: 1rem;
 }
 
-.header .navbar .nav-item {
-  color: #fff;
-  margin-left: 4rem;
-  font-size: 1.8rem;
+.header .header-wrap .icons #search-btn .search-form {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 50rem;
+  height: 25rem;
+  background: #fff;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
 }
 
-.header .navbar .nav-item:hover {
-  border-bottom: .3rem solid #fff;
-}
-
-.sticky {
-  -webkit-transition: all .5s;
-  transition: all .5s;
-  background: white;
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
-}
-
-.sticky .header-wrap .contacts .gmail {
-  color: #333;
-}
-
-.sticky .header-wrap .contacts .gmail:hover {
-  color: #333;
-}
-
-.sticky .header-wrap .contacts #bars-btn {
+.header .header-wrap .icons #menu-btn {
   font-size: 2rem;
+  padding: 1rem;
   color: #333;
-}
-
-.sticky .header-wrap .logo i {
-  color: #333;
-}
-
-.sticky .header-wrap .logo .title .title-up {
-  color: #333;
-}
-
-.sticky .header-wrap .logo .title .title-down {
-  color: #333;
-}
-
-.sticky .header-wrap #search-btn {
-  color: #555;
-}
-
-.sticky .navbar .nav-item {
-  color: #333;
-}
-
-.sticky .navbar .nav-item:hover {
-  border-bottom: .3rem solid #333;
+  display: none;
+  cursor: pointer;
 }
 
 .home {
-  padding: 0;
+  padding: 10rem 0 0;
   background: #222;
 }
 
@@ -673,134 +583,81 @@ section {
 }
 
 .products-preview {
-  z-index: 999999 !important;
   position: fixed;
   top: 0;
   left: 0;
-  min-height: 100vh;
+  right: 0;
+  bottom: 0;
+  background: var(--dark-bg);
+  height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.8);
+  z-index: 999;
   display: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
 .products-preview .preview {
-  display: none;
-  padding: 2rem;
   text-align: center;
-  background: #fff;
-  position: relative;
-  width: 40rem;
-  border-radius: 1rem;
-  -webkit-animation: fadeDown ease .3s;
-          animation: fadeDown ease .3s;
-}
-
-.products-preview .preview img {
-  max-width: 100%;
-  height: 23rem;
+  background: var(--white);
+  padding: 3rem 2rem;
+  border-radius: .5rem;
+  display: none;
+  width: 35rem;
 }
 
 .products-preview .preview.active {
   display: inline-block;
+  -webkit-animation: fadeIn 0.4s cubic-bezier(0.54, 1.3, 0.63, 1.34) backwards;
+          animation: fadeIn 0.4s cubic-bezier(0.54, 1.3, 0.63, 1.34) backwards;
 }
 
-.products-preview .preview .fa-times {
-  position: absolute;
-  top: 1rem;
-  right: 1.5rem;
-  cursor: pointer;
-  color: #444;
-  font-size: 2.3rem;
-}
-
-.products-preview .preview .fa-times.hover {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+.products-preview .preview img {
+  height: 25rem;
+  margin-bottom: 1rem;
 }
 
 .products-preview .preview h3 {
-  font-family: cursive;
-  color: #444;
-  padding: .5rem 0;
-  font-size: 2.5rem;
-}
-
-.products-preview .preview .starts {
   padding: 1rem 0;
+  font-size: 2.5rem;
+  color: var(--black);
+}
+
+.products-preview .preview .stars {
+  margin-top: .5rem;
+}
+
+.products-preview .preview .stars i {
   font-size: 1.7rem;
-}
-
-.products-preview .preview .starts span {
-  color: #999;
-}
-
-.products-preview .preview i {
-  color: #fea01c;
+  color: var(--peru);
 }
 
 .products-preview .preview p {
-  line-height: 1.5;
-  padding: 1rem 0 0;
-  font-size: 1.4rem;
-  color: #777;
-  text-transform: none;
-}
-
-.products-preview .preview .price-new {
-  padding: 1rem 0 .5rem;
-  font-size: 2.5rem;
-  color: #27ae60;
-}
-
-.products-preview .preview .price-new .price-old {
-  margin-left: 1rem;
-  font-size: 1.7rem;
-  color: #333;
-  text-decoration: line-through;
-}
-
-.products-preview .preview .buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 1.5rem;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-top: .6rem;
-}
-
-.products-preview .preview .buttons a {
-  text-transform: none;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 16rem;
-          flex: 1 1 16rem;
-  padding: 1rem;
   font-size: 1.6rem;
-  color: #444;
-  border: .1rem solid #444;
+  color: var(--light-black);
+  padding: 1rem 0;
+  line-height: 2;
 }
 
-.products-preview .preview .buttons a.cart {
-  background: #444;
+.products-preview .preview .price {
+  font-size: 2.5rem;
+  color: var(--black);
+  margin-bottom: .5rem;
+}
+
+#close-preview {
+  position: absolute;
+  top: 1.5rem;
+  right: 2.5rem;
+  font-size: 4rem;
+  cursor: pointer;
   color: #fff;
 }
 
-.products-preview .preview .buttons a.cart:hover {
-  border-radius: 1rem;
-  background: #111;
-}
-
-.products-preview .preview .buttons a.buy:hover {
-  border-radius: 1rem;
-  background: #319736;
-  color: #fff;
-  border: none;
+#close-preview:hover {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 /* media queries  */
@@ -830,16 +687,10 @@ section {
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
   }
-  .header .header-wrap .contacts .gmail {
-    display: none;
-  }
-  .header .header-wrap .contacts #bars-btn {
+  .header .header-wrap .icons #menu-btn {
     display: inline-block;
   }
-  .header .header-wrap .contacts #bars-btn:hover {
-    cursor: pointer;
-  }
-  .header .navbar {
+  .header .header-wrap .navbar {
     display: block;
     position: absolute;
     top: 99%;
@@ -851,11 +702,11 @@ section {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
             clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
-  .header .navbar.active {
+  .header .header-wrap .navbar.active {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
-  .header .navbar .nav-item {
+  .header .header-wrap .navbar .nav-item {
     color: #333;
     display: block;
     margin: 2rem;
@@ -863,7 +714,7 @@ section {
     max-width: 100%;
     font-weight: bolder;
   }
-  .header .navbar .nav-item:hover {
+  .header .header-wrap .navbar .nav-item:hover {
     background: #e1e1e1;
     border-bottom: .2rem solid #333;
   }
