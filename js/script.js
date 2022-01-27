@@ -1,17 +1,10 @@
-// acctive navbar
+// active
 let navbar = document.querySelector('.header .navbar');
-let menuBtn = document.querySelector('#bars-btn');
-let header = document.querySelector('.header');
-
-menuBtn.addEventListener('click', hiddenMenu)
-function hiddenMenu() {
-  menuBtn.classList.toggle('fa-times');
-  navbar.classList.toggle('active');
-}
+let menuBtn = document.querySelector('#menu-btn');
 
 
 menuBtn.onclick = () =>{
-  header.classList.add('active')
+  navbar.classList.toggle('active')
 }
 
 // window
@@ -32,15 +25,15 @@ home.onclick = () =>{
 }
 
 // popup preview
-let previewContainer = document.querySelector('.products-preview');
+let previewContainer = document.querySelector('.product-container');
 let previewBox = previewContainer.querySelectorAll('.preview');
 
-document.querySelectorAll('.necklace .slide').forEach(box =>{
+document.querySelectorAll('.swiper-wrapper .slide').forEach(box =>{
   box.onclick = () =>{
-    previewContainer.style.display = 'flex';
+    previewContainer.style.display='flex';
     let name = box.getAttribute('data-name');
     previewBox.forEach(preview =>{
-      let target = preview.getAttribute('data-target')
+      let target = preview.getAttribute('data-target');
       if(name == target){
         preview.classList.add('active');
       }
@@ -48,9 +41,10 @@ document.querySelectorAll('.necklace .slide').forEach(box =>{
   }
 })
 
-previewBox.forEach(close =>{
-  close.onclick = () =>{
+previewContainer.querySelector('#close-preview').onclick = () =>{
+  previewContainer.style.display='none';
+  previewBox.forEach(close =>{
     close.classList.remove('active');
-    previewContainer.style.display='none';
-  }
-})
+  })
+}
+
