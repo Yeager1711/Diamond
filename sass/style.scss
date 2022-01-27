@@ -506,6 +506,8 @@ section{
 
         .map{
             flex: 1 1 42rem;
+            width: 100%;
+            object-fit: cover;
         }
 
         .icons-container{
@@ -761,12 +763,7 @@ section{
     .product-container{
     
         .preview{
-            text-align: center;
-            background: #fff;
-            padding: 3rem 2rem;
-            margin: auto;
-            border-radius: 2rem;
-            display: none;
+
             width: 100%;
             height: auto;
     
@@ -776,7 +773,6 @@ section{
             }
     
             img{
-                flex: 1 1 25rem;
                 width: 100%;
             }
     
