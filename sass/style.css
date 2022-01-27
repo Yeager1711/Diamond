@@ -392,12 +392,17 @@ section {
 }
 
 .standard .row .images .model-content .content p {
+  overflow-y: scroll;
   text-transform: none;
   font-size: 1.7rem;
   font-weight: bolder;
   line-height: 2;
   color: #fff;
   padding-top: 1rem;
+}
+
+.standard .row .images .model-content .content p ::-webkit-scrollbar {
+  display: none;
 }
 
 .necklace .slide,

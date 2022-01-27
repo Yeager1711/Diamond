@@ -356,12 +356,17 @@ section{
                     }
     
                     p{
+                        overflow-y: scroll;
                         text-transform: none;
                         font-size: 1.7rem;
                         font-weight: bolder;
                         line-height: 2;
                         color: #fff;
                         padding-top: 1rem;
+
+                        ::-webkit-scrollbar{
+                            display: none;
+                        }
                     }
                 }
             }
