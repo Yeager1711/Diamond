@@ -356,7 +356,7 @@ section{
                     }
     
                     p{
-                        overflow-y: scroll;
+                        // overflow-y: scroll;
                         text-transform: none;
                         font-size: 1.7rem;
                         font-weight: bolder;
@@ -364,9 +364,9 @@ section{
                         color: #fff;
                         padding-top: 1rem;
 
-                        ::-webkit-scrollbar{
-                            display: none;
-                        }
+                        // ::-webkit-scrollbar{
+                        //     display: none;
+                        // }
                     }
                 }
             }
@@ -519,7 +519,7 @@ section{
             flex: 1 1 42rem;
     
             .icons{
-                padding:2rem;
+                padding: 0 2rem;
 
                 .title{
                     display: flex;
@@ -541,26 +541,25 @@ section{
                 }
    
                 .content{
+                    
                     p,
                     a{
+                        display: block;
                         line-height: 1.5;
                         font-size: 1.7rem;
                         color: #fff;
                         text-transform: none;
                         padding: 1rem;
+                        
+                        i{
+                            padding-right: .5rem;
+                        }
                     }
 
                     a:hover{
 
                         i{
                             padding-right: 1.5rem;
-                        }
-                    }
-
-                    p:hover{
-
-                        i{
-                            padding-right: 1.6rem;
                         }
                     }
                 }
@@ -592,7 +591,7 @@ section{
         margin: auto;
         border-radius: 2rem;
         display: none;
-        width: 70rem;
+        width: 50%;
         height: 50rem;
 
         &.active{
@@ -601,7 +600,7 @@ section{
         }
 
         img{
-            flex: 1 1 25rem;
+            width: 30rem;
         }
 
         h3{

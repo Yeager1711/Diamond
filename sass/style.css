@@ -392,17 +392,12 @@ section {
 }
 
 .standard .row .images .model-content .content p {
-  overflow-y: scroll;
   text-transform: none;
   font-size: 1.7rem;
   font-weight: bolder;
   line-height: 2;
   color: #fff;
   padding-top: 1rem;
-}
-
-.standard .row .images .model-content .content p ::-webkit-scrollbar {
-  display: none;
 }
 
 .necklace .slide,
@@ -585,7 +580,7 @@ section {
 }
 
 .footer .row .icons-container .icons {
-  padding: 2rem;
+  padding: 0 2rem;
 }
 
 .footer .row .icons-container .icons .title {
@@ -612,6 +607,7 @@ section {
 
 .footer .row .icons-container .icons .content p,
 .footer .row .icons-container .icons .content a {
+  display: block;
   line-height: 1.5;
   font-size: 1.7rem;
   color: #fff;
@@ -619,12 +615,13 @@ section {
   padding: 1rem;
 }
 
-.footer .row .icons-container .icons .content a:hover i {
-  padding-right: 1.5rem;
+.footer .row .icons-container .icons .content p i,
+.footer .row .icons-container .icons .content a i {
+  padding-right: .5rem;
 }
 
-.footer .row .icons-container .icons .content p:hover i {
-  padding-right: 1.6rem;
+.footer .row .icons-container .icons .content a:hover i {
+  padding-right: 1.5rem;
 }
 
 .product-container {
@@ -650,7 +647,7 @@ section {
   margin: auto;
   border-radius: 2rem;
   display: none;
-  width: 70rem;
+  width: 50%;
   height: 50rem;
 }
 
@@ -661,9 +658,7 @@ section {
 }
 
 .product-container .preview img {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 25rem;
-          flex: 1 1 25rem;
+  width: 30rem;
 }
 
 .product-container .preview h3 {

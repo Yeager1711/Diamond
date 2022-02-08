@@ -12,17 +12,6 @@ window.onscroll = () =>{
   menuBtn.classList.remove('fa-times')
   navbar.classList.remove('active');
 }
-// home
-let home = document.querySelector('.home');
-let searchForm = document.querySelector('.search-form');
-
-document.querySelector('#search-btn').onclick = () =>{
-  searchForm.classList.add('active');
-}
-
-home.onclick = () =>{
-  searchForm.classList.remove('active');
-}
 
 // popup preview
 let previewContainer = document.querySelector('.product-container');
