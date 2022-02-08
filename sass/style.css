@@ -658,7 +658,7 @@ section {
 }
 
 .product-container .preview img {
-  width: 30rem;
+  max-width: 70%;
 }
 
 .product-container .preview h3 {
